@@ -1,0 +1,97 @@
+@charset "utf-8";
+body,h1{
+  font-family:'Cinzel Decorative';
+}
+.card {
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  width:50%;
+  margin-left:25%;
+  margin-top:50px;
+  height:500px;
+}
+.container {
+    padding: 0 50px;
+}
+
+.title {
+    color: grey;
+    font-size: 18px;
+}
+
+
+
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+
+.card .input-container {
+	position: relative;
+	margin-top:50px;
+	visibility: visible;
+}
+.card .input-container input {
+  outline: none;
+  z-index: 1;
+  position: relative;
+  background: none;
+  width: 50%;
+  height: 75px;
+  border: 0;
+  color: #212121;
+  font-size: 24px;
+  font-weight: 100;
+}
+.card .input-container input:focus ~ label {
+  color: #9d9d9d;
+  -webkit-transform: translate(-12%, -50%) scale(0.75);
+          transform: translate(-12%, -50%) scale(0.75);
+}
+.card .input-container input:focus ~ .bar:before, .card .input-container input:focus ~ .bar:after {
+  width: 50%;
+}
+.card .input-container input:valid ~ label {
+  color: #9d9d9d;
+  -webkit-transform: translate(-12%, -50%) scale(0.75);
+          transform: translate(-12%, -50%) scale(0.75);
+}
+.card .input-container label {
+  position: absolute;
+  bottom:10px;
+  left: 0;
+  color: #757575;
+  font-size: 20px;
+  font-family: 'Cinzel Decorative';
+  font-weight: 300;
+  line-height: 60px;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+.card .input-container .bar {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #757575;
+  width: 50%;
+  height: 1px;
+}
+.card .input-container .bar:before, .card .input-container .bar:after {
+  content: '';
+  position: absolute;
+  background: #ed2553;
+  width: 0;
+  height: 2px;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+.card .input-container .bar:before {
+  left: 50%;
+}
+.card .input-container .bar:after {
+  right: 50%;
+}
+

@@ -1,0 +1,125 @@
+<link rel="stylesheet" href="bootstrap.min.css">
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="panel panel-default">
+                <div class="panel-heading">REGISTER</div>
+
+                <div class="panel-body">
+                    <form class="form-horizontal" method="POST" action="Register.py">
+              
+
+                        <div class="form-group $errors->hasname') ? ' has-error' : '' }}">
+                            <label for="name" class="col-md-4 control-label">FIRST_NAME</label>
+
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" name="fname"  required autofocus>
+
+                                
+                                   <br>
+
+                            </div>
+                        </div>
+                        <div class="form-group $errors->hasname') ? ' has-error' : '' }}">
+                                <label for="name" class="col-md-4 control-label">LAST_NAME</label>
+    
+                                <div class="col-md-6">
+                                    <input  type="text" class="form-control" name="lname"  required autofocus>
+    
+                                    
+                                       <br>
+    
+                                </div>
+                            </div>
+                        <div class="panel-body">
+                    <form class="form-horizontal" method="POST" action="Register.py">
+                        
+                       
+                            <div class="form-group $errors->hasname') ? ' has-error' : '' }}">
+                                <label for="line1" class="col-md-4 control-label">ADDRESS_LINE1</label>
+    
+                                <div class="col-md-6">
+                                    <input id="line1" type="text" class="form-control" name="line1"  required autofocus>
+                                    <br>
+                                   
+                                </div>
+                                <div class="form-group $errors->hasname') ? ' has-error' : '' }}">
+                                    <label for="line2" class="col-md-4 control-label">ADDRESS_LINE2</label>
+        
+                                    <div class="col-md-6">
+                                        <input id="line2" type="text" class="form-control" name="line2"  required autofocus>
+                                        <br>
+                                       
+                                    </div>
+                                    <div class="form-group $errors->hasname') ? ' has-error' : '' }}">
+                                        <label for="city" class="col-md-4 control-label">CITY</label>
+            
+                                        <div class="col-md-6">
+                                            <input id="city" type="text" class="form-control" name="city"  required autofocus>
+                                            <br>
+                                           
+                                        </div>
+                                        <div class="form-group $errors->hasname') ? ' has-error' : '' }}">
+                                            <label for="state" class="col-md-4 control-label">STATE</label>
+                
+                                            <div class="col-md-6">
+                                                <input id="state" type="text" class="form-control" name="state"  required autofocus>
+                                                <br>
+                                               
+                                            </div>
+                        </div>
+                        <div class="form-group $errors->hasname') ? ' has-error' : '' }}">
+                                <label for="name" class="col-md-4 control-label">PINCODE</label>
+    
+                                <div class="col-md-6">
+                                    <input type="Number" class="form-control" name="pin" minlength="6" maxlength='6' required autofocus>
+    
+                                    
+                                       <br>
+    
+                                </div>
+                              
+                                <div class="form-group $errors->hasname') ? ' has-error' : '' }}">
+                                    <label for="type" class="col-md-4 control-label">TYPE</label>
+                                    <div class="col-md-6">
+                                       <select name="type">
+                                           <option value="savings">Savings</option>
+                                           <option value="current">Current</option>
+                                       </select>
+                                       
+                                </div>
+                            </div>
+                        <div class="form-group $errors->hasname') ? ' has-error' : '' }}">
+                                <label for="amount" class="col-md-4 control-label">AMOUNT</label>
+    
+                                <div class="col-md-6">
+                                    <input type="Number" class="form-control" name="amount" min='1' required autofocus>
+    
+                                    
+                                       <br>
+    
+                                </div>
+                            </div>
+                        <div class="form-group $errors->haspassword') ? ' has-error' : '' }}">
+                            <label for="password" class="col-md-4 control-label">PASSWORD</label>
+
+                            <div class="col-md-6">
+                                <input id="password" type="password" class="form-control" name="password" required>
+
+                                <br>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-6 col-md-offset-4">
+                                <button type="submit" class="btn btn-primary">
+                                    Register
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
